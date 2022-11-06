@@ -58,7 +58,7 @@ export default function Project(props: {
             <div className="flex grow gap-10 justify-center"> 
 
                 { props.projects.map((proj, i) => 
-                <ProjectButton index={i} title={proj.title} icon={proj.icon}></ProjectButton>
+                  <ProjectButton key={"proj_button_"+i} index={i} title={proj.title} icon={proj.icon}></ProjectButton>
                 )}
 
             </div>
