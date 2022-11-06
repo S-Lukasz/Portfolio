@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from '../components/Header';
 import ProjectComponent from '../components/Project';
 import Project from '../components/ProjectButton';
@@ -78,11 +79,11 @@ export default function Home() {
           </div>
           
           { Projects.map((proj, i) => 
-            
-            <div key={"project_component_"+i}>
+
+            <React.Fragment key={"project_component_"+i}>
               <div id={i.toString()}></div>
               <ProjectComponent index={i} title={proj.title} description={proj.desc} description2={proj.desc2} images={proj.images}/> 
-            </div>
+            </React.Fragment>
           
           )}
 
