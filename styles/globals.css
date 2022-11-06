@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face 
+{
+  font-family: 'Redensek';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../public/REDENSEK.TTF");
+}
+
+body, html 
+{
+  color: #ebede9;
+  padding: 0;
+  margin: 0;
+  font-family: 'Redensek';
+  background-color: #151d28;
+  
+}
+
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+a 
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+* 
+{
+  box-sizing: border-box;
+}
+
+
+@media (prefers-color-scheme: dark) 
+{
+  html 
+  {
+    color-scheme: dark;
+  }
+  body 
+  {
+    color: #ebede9;
+    /*background: black;*/
+  }
+}
