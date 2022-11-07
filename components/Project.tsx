@@ -19,17 +19,17 @@ export default function ProjectComponent(props: {
 
   return (
     
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col items-center md:items-baseline gap-4">
 
       <p className={(props.index % 2 === 0 ? "text-left" : "text-right") + " font-bold text-orange-300 text-4xl"}> 
         {props.title}
       </p>
 
-      <div className = {(props.index % 2 === 0 ? "flex-row" : "flex-row-reverse") + " flex gap-4"}>
+      <div className = {(props.index % 2 === 0 ? "flex-col md:flex-row" : "flex-col md:flex-row-reverse") + " flex gap-4"}>
 
-        <div className = "h-min relative border border-white/75 rounded shadow-main overflow-hidden group">
+        <div className="w-full aspect-video relative border border-white/75 rounded shadow-main overflow-hidden group">
 
-          <img src={props.images[currImgIndex]} alt='proj'/>
+          <img className ="object-contain w-full h-full" src={props.images[currImgIndex]} alt='proj'/>
 
           <button className="
             w-1/12 h-full p-2 absolute right-0 md:-right-16 top-0 from-black/75 
@@ -47,14 +47,14 @@ export default function ProjectComponent(props: {
         
         </div>
         
-        <div className={(props.index % 2 === 0 ? "pl-10" : "pr-10") + " flex flex-col text-3xl text-left w-full"}> 
+        <div className={(props.index % 2 === 0 ? "md:pl-10" : "md:pr-10") + " flex flex-col text-3xl gap-6 text-center md:text-left w-full"}> 
 
           <div className="flex grow gap-5 flex-col text-3xl">
              <p>{props.description} </p>
              <p>{props.description2} </p>
           </div>
           
-          <div className = {(props.index % 2 === 0 ? "justify-end" : "justify-star") + " flex gap-4"}>
+          <div className = {(props.index % 2 === 0 ? "justify-center md:justify-end" : "justify-center md:justify-star") + " flex gap-4"}>
             <button className="border pb-1 px-4 text-2xl text-orange-500 hover:bg-slate-800 hover:text-orange-300"><a href="#">CODE</a></button>
             <button className="border pb-1 px-4 text-2xl text-orange-500 hover:bg-slate-800 hover:text-orange-300"><a href="#">DOWNLOAD</a></button>
           </div>
