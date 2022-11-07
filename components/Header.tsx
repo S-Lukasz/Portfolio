@@ -49,13 +49,13 @@ export default function Project(props: {
 
         </header>
 
-        <div className={(scrollY < 100 ? "-top-full" : "top-0" ) + " hidden md:flex transition-all duration-200 text-3xl bg-customColor1 text-center p-2 justify-center fixed border-b-2 z-10 border-slate-600 left-0 right-0"}>
+        <div className={(scrollY < 100 ? "-top-full" : "top-0" ) + " flex transition-all duration-200 text-3xl bg-customColor1 text-center p-4 justify-center fixed border-b-2 z-10 border-slate-600 left-0 right-0"}>
 
-            <Link href="/">
+            {/* <Link href="/">
                 <Image src="/logo_temp.png" alt='logo' width={logoWidth} height={logoHeight} />
-            </Link>
+            </Link> */}
 
-            <div className="flex grow gap-10 justify-center"> 
+            <div className="flex grow gap-6 justify-center"> 
 
                 { props.projects.map((proj, i) => 
                   <ProjectButton key={"proj_button_"+i} index={i} title={proj.title} icon={proj.icon}></ProjectButton>
@@ -63,7 +63,7 @@ export default function Project(props: {
 
             </div>
 
-            <div className="w-10 h-10"> </div>
+            <div className="md:w-10 md:h-10"> </div>
         
         </div>
 

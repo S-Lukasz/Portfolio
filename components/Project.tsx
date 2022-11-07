@@ -54,7 +54,7 @@ export default function ProjectComponent(props: {
              <p>{props.description2} </p>
           </div>
           
-          <div className = {(props.index % 2 === 0 ? "justify-center md:justify-end" : "justify-center md:justify-star") + " flex gap-4"}>
+          <div className = {(props.index % 2 === 0 ? "justify-center md:justify-end" : "justify-center md:justify-start") + " flex gap-4"}>
             <button className="border pb-1 px-4 text-2xl text-orange-500 hover:bg-slate-800 hover:text-orange-300"><a href="#">CODE</a></button>
             <button className="border pb-1 px-4 text-2xl text-orange-500 hover:bg-slate-800 hover:text-orange-300"><a href="#">DOWNLOAD</a></button>
           </div>
