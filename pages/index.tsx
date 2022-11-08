@@ -18,21 +18,21 @@ export default function Home() {
       desc: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs ",
       desc2: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry jakiejs Opis",
       icon: "Icons/cyberbug_game_icon.png",
-      images: ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_2.png", "Screens/bug_game_screen_3.png"]
+      images: ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_2.png", "Screens/bug_game_screen_3.png", "Screens/bug_game_screen_4.png"]
     },
     {
       title: "CRAWLER SOULS",
       desc: "Opis gry ddd jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpiss",
       desc2: "Opis gry ddd jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry ",
       icon: "Icons/crawlersouls_game_icon.png",
-      images: ["Screens/game_screen_1.png", "Screens/game_screen_2.png", "Screens/game_screen_3.png"]
+      images: ["Screens/game_screen_1.png", "Screens/game_screen_2.png", "Screens/game_screen_3.png", "Screens/game_screen_4.png"]
     },
     {
       title: "PACMAN 3D",
       desc: "Opis gry jakiejs tam Opis gry2 jakiejs tamOpis gry jakiejs tamOpis gry2 jakiejs tamOpis ",
       desc2: "Opis gry jakiejs tam Opis gry2 jakiejs tamOpis gry jakiejs tamOpis gry2 jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry ",
       icon: "Icons/pacman3D_game_icon.png",
-      images: ["Screens/pacman_game_1.PNG", "Screens/pacman_game_2.PNG", "Screens/pacman_game_3.PNG"]
+      images: ["Screens/pacman_game_1.PNG", "Screens/pacman_game_2.PNG", "Screens/pacman_game_3.PNG",  "Screens/pacman_game_4.PNG", "Screens/pacman_game_5.PNG"]
     }
 
   ];
