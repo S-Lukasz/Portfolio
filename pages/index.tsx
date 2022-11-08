@@ -55,8 +55,8 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-2">
 
-            <div className="flex flex-col md:flex-row gap-10">
-              <img className="h-52" src="/logo_temp.png" alt='icon'/>
+            <div className="flex flex-col md:flex-row gap-10 items-end">
+              <img className="border rounded-lg h-48 bg-slate-800" src="/portrait.png" alt='icon'/>
               <p className="text-center md:text-left">
               <span className=" font-bold text-orange-200">Welcome, </span> <br></br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate autem, voluptate quasi quam animi, 
                 exercitationem quod vel placeat earum asperiores nemo quae corporis amet voluptates, beatae aliquid aut eligendi

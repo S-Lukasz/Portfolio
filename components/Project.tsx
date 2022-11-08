@@ -27,7 +27,7 @@ export default function ProjectComponent(props: {
 
       <div className = {(props.index % 2 === 0 ? "flex-col md:flex-row" : "flex-col md:flex-row-reverse") + " flex gap-4"}>
 
-        <div className="w-full aspect-video relative border border-white/75 rounded shadow-main overflow-hidden group">
+        <div className="w-full aspect-video relative border border-white/75 rounded-lg shadow-main overflow-hidden group">
 
           <img className ="object-contain w-full h-full" src={props.images[currImgIndex]} alt='proj'/>
 
@@ -55,8 +55,8 @@ export default function ProjectComponent(props: {
           </div>
           
           <div className = {(props.index % 2 === 0 ? "justify-center md:justify-end" : "justify-center md:justify-start") + " flex gap-4"}>
-            <button className="border pb-1 px-4 text-2xl text-orange-500 hover:bg-slate-800 hover:text-orange-300"><a href="#">CODE</a></button>
-            <button className="border pb-1 px-4 text-2xl text-orange-500 hover:bg-slate-800 hover:text-orange-300"><a href="#">DOWNLOAD</a></button>
+            <button className="border rounded-lg pb-1 px-4 text-2xl text-orange-500 hover:bg-slate-800 hover:text-orange-300"><a href="#">CODE</a></button>
+            <button className="border rounded-lg pb-1 px-4 text-2xl text-orange-500 hover:bg-slate-800 hover:text-orange-300"><a href="#">DOWNLOAD</a></button>
           </div>
           
         </div>
