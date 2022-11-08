@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
 
-    <div className="min-h-screen flex flex-col">
+    <div id="99" className="min-h-screen flex flex-col">
 
       <Header projects={Projects}></Header>
       
@@ -119,7 +119,7 @@ export default function Home() {
 
       </div>
 
-      <footer className="text-2xl bg-customColor1 text-center p-4 border-t-2 border-slate-600">
+      <footer id="100" className="text-2xl bg-customColor1 text-center p-4 border-t-2 border-slate-600">
         (monke) Footer example text
       </footer>
 
