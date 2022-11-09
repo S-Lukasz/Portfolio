@@ -27,7 +27,7 @@ export default function ProjectComponent(props: {
 
       <div className = {(props.index % 2 === 0 ? "flex-col md:flex-row" : "flex-col md:flex-row-reverse") + " flex gap-4"}>
 
-        <div className="w-full aspect-video relative border border-white/75 rounded-lg shadow-main overflow-hidden group">
+        <div className="w-full h-min relative border border-white/75 rounded-lg shadow-main overflow-hidden group">
 
           <img className ="object-contain w-full h-full" src={props.images[currImgIndex]} alt='proj'/>
 
@@ -49,9 +49,9 @@ export default function ProjectComponent(props: {
         
         <div className={(props.index % 2 === 0 ? "md:pl-10" : "md:pr-10") + " flex flex-col text-3xl gap-6 text-center md:text-left w-full"}> 
 
-          <div className="flex grow gap-5 flex-col text-3xl">
-             <p>{props.description} </p>
-             <p>{props.description2} </p>
+          <div className="flex grow gap-5 flex-col text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl">
+             <p>{props.description}</p>
+             <p>{props.description2}</p>
           </div>
           
           <div className = {(props.index % 2 === 0 ? "justify-center md:justify-end" : "justify-center md:justify-start") + " flex gap-4"}>

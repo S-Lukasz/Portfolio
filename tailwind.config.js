@@ -9,8 +9,11 @@ module.exports = {
       colors: {
         customBgColor:"#151d28",
         customColor1: "#10141f",
+      },
+      screens: {
+        '3xl': '1920px',
       }
-    },
+    }
   },
 
   plugins: [],

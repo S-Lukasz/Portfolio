@@ -88,7 +88,7 @@ export default function Home() {
           { Projects.map((proj, i) => 
 
             <React.Fragment key={"project_component_"+i}>
-              <div id={i.toString()}></div>
+              <div className="pb-10" id={i.toString()}></div>
               <ProjectComponent index={i} title={proj.title} description={proj.desc} description2={proj.desc2} images={proj.images}/> 
             </React.Fragment>
           
