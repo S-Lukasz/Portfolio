@@ -72,8 +72,8 @@ export default function Home()
           )}
           >
             
-            { galleryImages.map((image) => 
-              <div>
+            { galleryImages.map((image, index) => 
+              <div key={"gallery_image_"+index}>
                 <img src={image} />
               </div>
             )}
