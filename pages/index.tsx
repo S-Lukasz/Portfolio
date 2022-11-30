@@ -105,10 +105,10 @@ export default function Home()
               <img className="shadow-black/60 shadow-lg h-48 bg-slate-800" src="/portrait.png" alt='icon'/>
               <p className="text-center md:text-left">
                 <span className=" font-bold text-orange-200">WELCOME, </span> <br></br> 
-                My name is Łukasz Surma AnD I'm a Game Developer, programming since the fall of 2018, and it's my passion. 
+                My name is Łukasz Surma AnD I&apos;'m a Game Developer, programming since the fall of 2018, and it&apos;'s my passion. 
                 My latest project on which I was working is called <span className=" font-bold text-orange-200"> PIZZA EMPIRE </span> it was
-                created in<span className=" font-bold text-orange-200"> UNITY </span>engine with the use of<span className=" font-bold text-orange-200"> C# </span>language.
-                Besides that, I create websites like this one ;) in <span className=" font-bold text-orange-200"> NEXT.js</span>
+                created in<span className="font-bold text-orange-200"> UNITY </span>engine with the use of<span className=" font-bold text-orange-200"> C# </span>language.
+                Besides that I create websites like this one ;) in <span className=" font-bold text-orange-200"> NEXT.js</span>
               </p>
             </div>
 
