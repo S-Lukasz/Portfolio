@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Home()
 {
-  const GalleryImages = ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_4.png", "Screens/game_screen_2.png", "Screens/game_screen_1.png", "Screens/pacman_game_2.png","Screens/pacman_game_3.png", "Screens/pizza_empire_1.png", "Screens/pizza_empire_4.png", "Screens/survival_3.png", "Screens/survival_4.png", "Screens/gallery_img_no_br_1.png", "Screens/gallery_img_no_br_2.png", "Screens/gallery_img_no_br_3.png", "Screens/gallery_img_no_br_4.png"];
+  const GalleryImages = ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_4.png", "Screens/game_screen_2.png", "Screens/game_screen_1.PNG", "Screens/pacman_game_2.PNG","Screens/pacman_game_3.png", "Screens/pizza_empire_1.png", "Screens/pizza_empire_4.png", "Screens/survival_3.png", "Screens/survival_4.png", "Screens/gallery_img_no_br_1.png", "Screens/gallery_img_no_br_2.png", "Screens/gallery_img_no_br_3.png", "Screens/gallery_img_no_br_4.png"];
 
   const Projects = [
     {
