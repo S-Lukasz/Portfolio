@@ -1,9 +1,12 @@
 import React from 'react';
 import Header from '../components/Header';
 import ProjectComponent from '../components/Project';
-import Project from '../components/ProjectButton';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-export default function Home() {
+export default function Home()
+{
+  const GalleryImages = ["Screens/survival_1.png", "Screens/survival_2.png", "Screens/survival_3.png", "Screens/survival_4.png"];
 
   const Projects = [
     {
@@ -18,24 +21,27 @@ export default function Home() {
       desc: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs ",
       desc2: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry jakiejs Opis",
       icon: "Icons/cyberbug_game_icon.png",
-      images: ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_2.png", "Screens/bug_game_screen_3.png", "Screens/bug_game_screen_4.png"]
+      images: ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_2.png", "Screens/bug_game_screen_3.png"]
     },
     {
       title: "CRAWLER SOULS",
       desc: "Opis gry ddd jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpiss",
       desc2: "Opis gry ddd jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry ",
       icon: "Icons/crawlersouls_game_icon.png",
-      images: ["Screens/game_screen_1.png", "Screens/game_screen_2.png", "Screens/game_screen_3.png", "Screens/game_screen_4.png"]
+      images: ["Screens/game_screen_1.png", "Screens/game_screen_2.png", "Screens/game_screen_3.png"]
     },
     {
       title: "PACMAN 3D",
       desc: "Opis gry jakiejs tam Opis gry2 jakiejs tamOpis gry jakiejs tamOpis gry2 jakiejs tamOpis ",
       desc2: "Opis gry jakiejs tam Opis gry2 jakiejs tamOpis gry jakiejs tamOpis gry2 jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry ",
       icon: "Icons/pacman3D_game_icon.png",
-      images: ["Screens/pacman_game_1.PNG", "Screens/pacman_game_2.PNG", "Screens/pacman_game_3.PNG",  "Screens/pacman_game_4.PNG", "Screens/pacman_game_5.PNG"]
+      images: ["Screens/pacman_game_1.PNG", "Screens/pacman_game_2.PNG", "Screens/pacman_game_3.PNG", "Screens/pacman_game_4.PNG"]
     }
-
   ];
+
+  const galleryImages = Projects
+    .reduce((prev : any[], curr) => [...prev, ...curr.images] as string[], [])
+    .sort((a, b) => 0.5 - Math.random());
 
   return (
 
@@ -45,8 +51,36 @@ export default function Home() {
       
       <div className="grow">
 
-        <div className="w-full before:bg-gradient-to-t before:from-customBgColor/75 before:via-transparent before:to-customBgColor/75 relative before:absolute before:top-0 before:right-0 before:left-0 before:bottom-0 border-b-2 border-slate-600"> <img src="/main_background_temp.jpg" alt='logo'/> </div>
-
+        <div className="w-full before:bg-gradient-to-t before:from-customBgColor/75 before:via-transparent before:to-customBgColor/75 
+        relative before:absolute before:top-0 
+        before:right-0 before:left-0 before:bottom-0 
+        border-b-2 border-slate-600"> 
+          <Carousel autoPlay centerMode centerSlidePercentage={100/3} infiniteLoop showThumbs={false} 
+          renderArrowPrev={(onClickHandler, hasPrev, label) => (
+            <button className="
+            absolute p-2 top-0 from-black/75 bottom-0 w-8
+            bg-gradient-to-r flex items-center z-10" onClick={ onClickHandler }>
+              <img className="mx-auto w-4" src={"Icons/arrow_button_left.png"} alt='proj'/>
+            </button>
+          )}
+          renderArrowNext={(onClickHandler, hasNext, label) => (
+            <button className="
+              p-2 absolute right-0 top-0 from-black/75 bottom-0 w-8
+              bg-gradient-to-l flex items-center z-10" onClick={ onClickHandler }>
+              <img className="mx-auto w-4" src={"Icons/arrow_button_right.png"} alt='proj'/>
+            </button>
+          )}
+          >
+            
+            { galleryImages.map((image) => 
+              <div>
+                <img src={image} />
+              </div>
+            )}
+          </Carousel>
+       </div>
+        
+        
         <div className="flex flex-col items-center gap-14 w-3/4 mx-auto text-4xl text-center my-6 pb-20">
 
           <div>
