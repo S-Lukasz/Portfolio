@@ -35,21 +35,21 @@ export default function Project(props: {
     
     <div>
 
-        <header className={(scrollY < 100 ? "top-0" : "-top-full" ) + " transition-all duration-100 text-3xl bg-customColor1 border-b-2 border-slate-600 text-center p-3 flex justify-center sticky top-0"}>
+        <header className={(scrollY < 100 ? "top-0" : "-top-full" ) + " transition-all duration-100 text-3xl bg-customColor1 border-b-2 border-slate-600 text-center p-3 flex justify-center pb-2 sticky top-0"}>
 
-            <Link href="/">
-                <Image className="border rounded-lg" src="/logo_temp.png" alt='logo' width={logoWidth} height={logoHeight} />
-            </Link>
+            {/* <Link href="/">
+                <Image className="" src="/logo_temp.png" alt='logo' width={logoWidth} height={logoHeight} />
+            </Link> */}
 
             <div className="grow"> 
-              Hi my name is <span className=" text-center font-bold text-orange-300">Łukasz Surma</span> 
+              <span className=" text-center font-bold text-orange-300 text-5xl">PORTFOLIO</span> 
             </div>
 
             <div className="w-10 h-10"> </div>
 
         </header>
 
-        <div className={(scrollY < 100 ? "-top-full" : "top-0" ) + " flex transition-all duration-200 text-3xl bg-customColor1 text-center p-4 justify-center fixed border-b-2 z-10 border-slate-600 left-0 right-0"}>
+        <div className={(scrollY < 100 ? "-top-full" : "top-0" ) + " flex transition-all duration-200 text-3xl bg-customColor1 text-center p-4 justify-center fixed border-b-2 border-orange-300 left-0 right-0 z-20"}>
 
             {/* <Link href="/">
                 <Image src="/logo_temp.png" alt='logo' width={logoWidth} height={logoHeight} />

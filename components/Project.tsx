@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function ProjectComponent(props: { 
   index : number; 
   title : string; 
+  title_detail : string; 
   description : string; 
   description2 : string; 
   images : string[];
@@ -21,13 +22,16 @@ export default function ProjectComponent(props: {
     
     <div className="flex flex-col items-center md:items-baseline gap-4">
 
-      <p className={(props.index % 2 === 0 ? "text-left" : "text-right") + " font-bold text-orange-300 text-4xl"}> 
+      <div className="font-bold text-left text-orange-300 text-4xl"> 
         {props.title}
-      </p>
+        <p className="font-semibold text-orange-200 text-2xl">  
+          {props.title_detail} 
+        </p>
+      </div>
 
       <div className = {(props.index % 2 === 0 ? "flex-col md:flex-row" : "flex-col md:flex-row-reverse") + " flex gap-4"}>
 
-        <div className="w-full h-min relative border border-white/75 rounded-lg shadow-main overflow-hidden group">
+        <div className="w-full h-min relative shadow-black/60 shadow-lg shadow-main overflow-hidden group">
 
           <img className ="object-contain w-full h-full" src={props.images[currImgIndex]} alt='proj'/>
 
@@ -49,14 +53,14 @@ export default function ProjectComponent(props: {
         
         <div className={(props.index % 2 === 0 ? "md:pl-10" : "md:pr-10") + " flex flex-col text-3xl gap-6 text-center md:text-left w-full"}> 
 
-          <div className="flex grow gap-5 flex-col text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl">
+          <div className="flex grow gap-5 flex-col text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl drop-shadow-sm shadow-black">
              <p>{props.description}</p>
              <p>{props.description2}</p>
           </div>
           
           <div className = {(props.index % 2 === 0 ? "justify-center md:justify-end" : "justify-center md:justify-start") + " flex gap-4"}>
-            <button className="border rounded-lg pb-1 px-4 text-2xl text-orange-500 hover:bg-slate-800 hover:text-orange-300"><a href="#">CODE</a></button>
-            <button className="border rounded-lg pb-1 px-4 text-2xl text-orange-500 hover:bg-slate-800 hover:text-orange-300"><a href="#">DOWNLOAD</a></button>
+            <button className="shadow-slate-900 shadow-lg shadow-main pb-1 px-4 text-2xl bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"><a href="#">CODE</a></button>
+            <button className="shadow-slate-900 shadow-lg shadow-main pb-1 px-4 text-2xl bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"><a href="#">DOWNLOAD</a></button>
           </div>
           
         </div>
@@ -64,8 +68,6 @@ export default function ProjectComponent(props: {
       </div>
 
     </div>
-
-
   );
   
 }
