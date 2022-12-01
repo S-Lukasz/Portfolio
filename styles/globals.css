@@ -18,7 +18,12 @@ body, html
   margin: 0;
   font-family: 'Redensek';
   background-color: #151d28;
-  
+  cursor: url("../public/cursor.png"), auto;
+}
+
+.cursorHover
+{
+  cursor: url("../public/cursor2.png"), auto;
 }
 
 html

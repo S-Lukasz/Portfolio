@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { Text } from "./common/Text";
 
 export default function ProjectComponent(props: { 
   index : number; 
@@ -54,7 +55,7 @@ export default function ProjectComponent(props: {
         <div className={(props.index % 2 === 0 ? "md:pl-10" : "md:pr-10") + " flex flex-col text-3xl gap-6 text-center md:text-left w-full"}> 
 
           <div className="flex grow gap-5 flex-col text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl drop-shadow-sm shadow-black">
-             <p>{props.description}</p>
+            <Text text={props.description} specialText="HackYeah" specialClassName=" text-orange-200" linkName="#"/>
              <p>{props.description2}</p>
           </div>
           
