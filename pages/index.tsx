@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head'
 import Header from '../components/Header';
 import ProjectComponent from '../components/Project';
 import { Carousel } from 'react-responsive-carousel';
@@ -20,9 +21,9 @@ export default function Home()
     {
       title: "AGE OF CARPATHIAN",
       title_detail: "2022, Finished",
-      desc: "2ND PLACE WINNER at HackYeah GAME DEVELOPMENT #3POLISH MEDIVAL VILLAGES AND SETTLEMENTS",
-      desc2: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry jakiejs Opis",
-      icon: "Icons/pizza_icon.png",
+      desc: "WINNER OF 2ND PLACE at HACKYEAH GAME DEVELOPMENT #3POLISH MEDIVAL VILLAGES AND SETTLEMENTS CONTEST",
+      desc2: "Area of the Carpathian mountains, you get land that you have to develop, mark farmland, harvest crops, graze sheep and sell materials to expand your village, take part in the race to achieve the best developed village.",
+      icon: "Icons/AoC_icon.png",
       images: ["Screens/age_of_carpathian_1.png", "Screens/age_of_carpathian_2.png", "Screens/age_of_carpathian_3.png", "Screens/age_of_carpathian_4.png", "Screens/age_of_carpathian_5.png"]
     },
     {
@@ -66,6 +67,11 @@ export default function Home()
   return (
 
     <div id="99" className="min-h-screen flex flex-col">
+
+      <Head>
+        <title>Portfolio</title>
+        <link rel="icon" href="/fav_icon_gamepad.png" />
+      </Head>
 
       <Header projects={Projects}></Header>
       
@@ -157,15 +163,15 @@ export default function Home()
           <div className="flex flex-col justify-center gap-4">
             <div className="flex items-center flex-col md:flex-row gap-4">
               <img className="w-12 h-12" src="Icons/mail_icon.png" alt='icon'/>
-              <div className="text-left font-bold text-2xl md:text-3xl">
-                <a href="mailto:lukaszsurma73@gmail.com">Lukaszsurma73@gmail.com</a>
+              <div className="cursorHover text-left font-bold text-2xl md:text-3xl">
+                <a className="cursorHover" href="mailto:lukaszsurma73@gmail.com">Lukaszsurma73@gmail.com</a>
               </div>
             </div>
 
             <div className="flex items-center flex-col md:flex-row gap-4">
               <img className="w-12 h-12" src="Icons/github_icon.png" alt='icon'/>
-              <div className="text-left font-bold text-3xl">
-                <a target="blank" href="https://github.com/S-Lukasz">GitHub</a>
+              <div className="cursorHover text-left font-bold text-3xl">
+                <a className="cursorHover" target="blank" href="https://github.com/S-Lukasz">GitHub</a>
               </div>
             </div>
 

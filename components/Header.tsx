@@ -23,7 +23,7 @@ export default function Project(props: { projects : Project[]; }) {
           ${scrollDirection === "up" ? "-top-full" : "top-0"} 
           flex transition-all duration-200 text-3xl bg-customColor1 text-center p-4 justify-center fixed border-b-2 border-orange-300 left-0 right-0 z-20`}
         >
-          <div className="flex grow gap-6 justify-center"> 
+          <div className="cursorHover flex grow gap-6 justify-center"> 
               <ProjectButton key={"proj_button_"+99} index={99} icon={"Icons/arrow_button_up.png"}></ProjectButton>
 
               { props.projects.map((proj, i) => 

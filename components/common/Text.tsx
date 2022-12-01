@@ -17,7 +17,7 @@ export const Text = ({
   const content =
     tempArr.length === 2 ? (
       <>
-        {tempArr[0]} <a href={linkName} className={specialClassName}>{specialText}</a> {tempArr[1]}
+        {tempArr[0]} <a target="blank" href={linkName} className={specialClassName}>{specialText}</a> {tempArr[1]}
       </>
     ) : (
       text
