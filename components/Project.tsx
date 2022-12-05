@@ -23,9 +23,9 @@ export default function ProjectComponent(props: {
     
     <div className="flex flex-col items-center md:items-baseline gap-4">
 
-      <div className=" text-left text-orange-300 text-4xl"> 
+      <div className=" text-left text-orange-300 text-3xl"> 
         {props.title}
-        <p className=" text-orange-200 text-2xl">  
+        <p className=" text-orange-200 text-xl">  
           {props.title_detail} 
         </p>
       </div>
@@ -60,8 +60,8 @@ export default function ProjectComponent(props: {
           </div>
           
           <div className = {(props.index % 2 === 0 ? "justify-center md:justify-end" : "justify-center md:justify-start") + " flex gap-4"}>
-            <button className="shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 border border-slate-600 hover:border-orange-300 rounded-sm px-4 text-xl bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"><a className="cursorHover" href="#">CODE</a></button>
-            <button className="shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 border border-slate-600 hover:border-orange-300 rounded-sm px-4 text-xl bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"><a className="cursorHover" href="#">DOWNLOAD</a></button>
+            <button className="shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 border border-slate-600 hover:border-orange-300 rounded-sm px-8 text-sm bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"><a className="cursorHover" href="#">CODE</a></button>
+            <button className="shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 border border-slate-600 hover:border-orange-300 rounded-sm px-8 text-sm bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"><a className="cursorHover" href="#">DOWNLOAD</a></button>
           </div>
           
         </div>

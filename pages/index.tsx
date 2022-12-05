@@ -13,15 +13,15 @@ export default function Home()
     {
       title: "PIZZA EMPIRE",
       title_detail: "2022, Paused",
-      desc: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs ",
-      desc2: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry jakiejs Opis",
+      desc: "Tycoon game with mafia.",
+      desc2: "Choose a place to open a pizzeria, hire employees, pay suppliers and create your first menu. Get to know your clients, learn to deal with the mafia and keep growing. Soon your small pizzeria will grow into a huge chain covering the whole city.",
       icon: "Icons/pizza_icon.png",
       images: ["Screens/pizza_empire_1.png", "Screens/pizza_empire_2.png", "Screens/pizza_empire_3.png", "Screens/pizza_empire_4.png", "Screens/pizza_empire_5.png", "Screens/pizza_empire_6.png"]
     },
     {
       title: "AGE OF CARPATHIAN",
-      title_detail: "2022, Finished",
-      desc: "WINNER OF 2ND PLACE at HACKYEAH GAME DEVELOPMENT #3POLISH MEDIVAL VILLAGES AND SETTLEMENTS CONTEST",
+      title_detail: "2022, Finished in 24h",
+      desc: "Winner OF 2ND place at HACKYEAH Game Development #3 Polish Medival Villages and Settlements contest.",
       desc2: "Area of the Carpathian mountains, you get land that you have to develop, mark farmland, harvest crops, graze sheep and sell materials to expand your village, take part in the race to achieve the best developed village.",
       icon: "Icons/AoC_icon.png",
       images: ["Screens/age_of_carpathian_1.png", "Screens/age_of_carpathian_2.png", "Screens/age_of_carpathian_3.png", "Screens/age_of_carpathian_4.png", "Screens/age_of_carpathian_5.png"]
@@ -29,10 +29,18 @@ export default function Home()
     {
       title: "SURVIVAL ISLAND",
       title_detail: "2022, Work in progress",
-      desc: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs ",
-      desc2: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry jakiejs Opis",
+      desc: "Top down survival game.",
+      desc2: "Gather resources, craft new items, build your base, farm crops and explore world full of surprises.",
       icon: "Icons/survival_game_icon.png",
       images: ["Screens/survival_1.png", "Screens/survival_2.png", "Screens/survival_3.png", "Screens/survival_4.png"]
+    },
+    {
+      title: "COSSACK GIRLS",
+      title_detail: "2022, Finished in 48h",
+      desc: "United With Ukraine Game Jam - Created with two of my friends.",
+      desc2: "Cooperative game where you have to face enemies together as a ship commanders, play up to 4 people, use your Keyboard or Joysticks. Upgrade your ship, defend your country and defeat the enemy fleet.",
+      icon: "Icons/AoC_icon.png",
+      images: ["Screens/cossack_screen_0.png", "Screens/cossack_screen_1.png", "Screens/cossack_screen_2.png"]
     },
     {
       title: "CYBERBUG",
@@ -122,7 +130,7 @@ export default function Home()
 
           <div className="flex flex-col items-center gap-2">
 
-            <div className="text-3xl flex flex-col md:flex-row gap-10 items-center">
+            <div className="text-2xl flex flex-col md:flex-row gap-10 items-center">
               <img className="shadow-black/60 shadow-lg h-48 bg-slate-800" src="/portrait.png" alt='icon'/>
               <p className="text-center md:text-left">
                 <span className="  text-orange-200">WELCOME, </span> <br></br> 
@@ -151,7 +159,7 @@ export default function Home()
           </div>
 
           <div>
-            <p className="text-left  text-orange-300 text-4xl"> PROJECTS </p>
+            <p className="text-left text-orange-300 text-4xl"> PROJECTS </p>
           </div>
           
           { 
