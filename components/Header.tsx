@@ -13,7 +13,7 @@ export default function Project(props: { projects : Project[]; }) {
           transition-all duration-100 text-3xl bg-customColor1 border-b-2 border-slate-600 text-center p-3 flex justify-center pb-4 sticky top-0`}
         >
           <div className="grow"> 
-            <span className=" text-center font-bold text-orange-300 text-5xl">ŁUKASZ SURMA - PORTFOLIO</span> 
+            <span className=" text-center  text-orange-300 text-4xl">ŁUKASZ SURMA - PORTFOLIO</span> 
           </div>
 
           <div className="w-10 h-10"> </div>

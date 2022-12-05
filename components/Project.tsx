@@ -23,9 +23,9 @@ export default function ProjectComponent(props: {
     
     <div className="flex flex-col items-center md:items-baseline gap-4">
 
-      <div className="font-bold text-left text-orange-300 text-4xl"> 
+      <div className=" text-left text-orange-300 text-4xl"> 
         {props.title}
-        <p className="font-semibold text-orange-200 text-2xl">  
+        <p className=" text-orange-200 text-2xl">  
           {props.title_detail} 
         </p>
       </div>
@@ -52,16 +52,16 @@ export default function ProjectComponent(props: {
         
         </div>
         
-        <div className={(props.index % 2 === 0 ? "md:pl-10" : "md:pr-10") + " flex flex-col text-3xl gap-6 text-center md:text-left w-full"}> 
+        <div className={(props.index % 2 === 0 ? "md:pl-10" : "md:pr-10") + " flex flex-col text-xl gap-6 text-center md:text-left w-full"}> 
 
-          <div className="flex grow gap-5 flex-col text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl drop-shadow-sm shadow-black">
+          <div className="flex grow gap-5 flex-col text-sm xl:text-sm 2xl:text-xl 3xl:text-2xl drop-shadow-sm shadow-black">
             <Text text={props.description} specialText="HACKYEAH" specialClassName=" text-orange-200 cursorHover" linkName="https://hackyeah.pl/"/>
              <p>{props.description2}</p>
           </div>
           
           <div className = {(props.index % 2 === 0 ? "justify-center md:justify-end" : "justify-center md:justify-start") + " flex gap-4"}>
-            <button className="shadow-slate-900 cursorHover shadow-lg shadow-main pb-1 px-4 text-2xl bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"><a className="cursorHover" href="#">CODE</a></button>
-            <button className="shadow-slate-900 cursorHover shadow-lg shadow-main pb-1 px-4 text-2xl bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"><a className="cursorHover" href="#">DOWNLOAD</a></button>
+            <button className="shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 border border-slate-600 hover:border-orange-300 rounded-sm px-4 text-xl bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"><a className="cursorHover" href="#">CODE</a></button>
+            <button className="shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 border border-slate-600 hover:border-orange-300 rounded-sm px-4 text-xl bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"><a className="cursorHover" href="#">DOWNLOAD</a></button>
           </div>
           
         </div>

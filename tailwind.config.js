@@ -12,6 +12,9 @@ module.exports = {
       },
       screens: {
         '3xl': '1920px',
+      },
+      dropShadow: {
+        'custom': '0 4px 6px rgba(0, 0, 0, 0.8)'
       }
     }
   },

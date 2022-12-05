@@ -12,7 +12,7 @@ export default function Home()
   const Projects = [
     {
       title: "PIZZA EMPIRE",
-      title_detail: "2022, Project Suspended",
+      title_detail: "2022, Paused",
       desc: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs ",
       desc2: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry jakiejs Opis",
       icon: "Icons/pizza_icon.png",
@@ -71,11 +71,16 @@ export default function Home()
       <Head>
         <title>Portfolio</title>
         <link rel="icon" href="/fav_icon_gamepad.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet"/>
       </Head>
 
       <Header projects={Projects}></Header>
       
       <div className="grow">
+
+        {/* <iframe src="/gamejam_certificate.pdf" height="600" width="300"></iframe> */}
 
         <div className="w-full before:bg-gradient-to-t before:from-customBgColor/75 before:via-transparent before:to-customBgColor/75 
         relative before:absolute before:top-0 
@@ -112,33 +117,33 @@ export default function Home()
         <div className="flex flex-col items-center gap-14 w-3/4 mx-auto text-4xl text-center my-6 pb-20">
 
           <div>
-            <p className="text-left font-bold text-orange-300 text-5xl mt-4"> ABOUT ME </p>
+            <p className="text-left text-orange-300 text-4xl mt-4"> ABOUT ME </p>
           </div>
 
           <div className="flex flex-col items-center gap-2">
 
-            <div className="flex flex-col md:flex-row gap-10 items-center">
+            <div className="text-3xl flex flex-col md:flex-row gap-10 items-center">
               <img className="shadow-black/60 shadow-lg h-48 bg-slate-800" src="/portrait.png" alt='icon'/>
               <p className="text-center md:text-left">
-                <span className=" font-bold text-orange-200">WELCOME, </span> <br></br> 
-                My name is Łukasz AnD I&apos;m a Game Developer, started programming in the fall of 2018, and it became my passion, especially making Games.
-                To create them I use<span className="font-bold text-orange-200"> UNITY </span>engine with the<span className=" font-bold text-orange-200"> C# </span>language.
-                Besides that I create websites like this one ;) in <span className=" font-bold text-orange-200"> NEXT.js</span> <br></br> <br></br> 
+                <span className="  text-orange-200">WELCOME, </span> <br></br> 
+                My name is Łukasz and I&apos;m a Game Developer, started programming in the fall of 2018, and it became my passion, especially making Games.
+                To create them I use<span className=" text-orange-200"> UNITY </span>engine with the<span className="  text-orange-200"> C# </span>language.
+                Besides that I create websites like this one, made in <span className="  text-orange-200"> NEXT.js</span> <br></br> <br></br> 
 
-                Currently I&apos;ve got <span className=" font-bold text-orange-200">2</span> years of experience in game development, including <span className=" font-bold text-orange-200">1</span> year of commercial experience.
+                Currently I&apos;ve got <span className="  text-orange-200">2</span> years of experience in game development, including <span className="  text-orange-200">1</span> year of commercial experience.
               </p>
             </div>
 
             <div className="flex flex-col items-center gap-10 h-52">
 
-              <p className="text-left font-bold text-orange-300 text-5xl mt-4"> SKILLS </p>
+              <p className="text-left text-orange-300 text-4xl mt-4"> SKILLS </p>
 
               <div className="flex flex-wrap justify-center items-center gap-6">
-                <img className="w-18 h-18" src="Icons/csharp_icon.png" alt='icon'/>
-                <img className="w-18 h-18" src="Icons/unity_icon.png" alt='icon'/>
-                <img className="w-18 h-18" src="Icons/git_icon.png" alt='icon'/>
-                <img className="w-18 h-18" src="Icons/js_icon.png" alt='icon'/>
-                <img className="w-14 h-14" src="Icons/react_icon.png" alt='icon'/>
+                <a className="cursorHover" href="#"><img className="drop-shadow-custom w-22 h-22" src="Icons/csharp_icon.png" alt='icon'/></a>
+                <a className="cursorHover" href="#"><img className="drop-shadow-custom w-22 h-22" src="Icons/unity_icon.png" alt='icon'/></a>
+                <a className="cursorHover" href="#"><img className="drop-shadow-custom w-22 h-22" src="Icons/git_icon.png" alt='icon'/></a>
+                <a className="cursorHover" href="#"><img className="drop-shadow-custom w-22 h-22" src="Icons/js_icon.png" alt='icon'/></a>
+                <a className="cursorHover" href="#"><img className="drop-shadow-custom w-18 h-18" src="Icons/react_icon.png" alt='icon'/></a>
               </div>
 
             </div>
@@ -146,7 +151,7 @@ export default function Home()
           </div>
 
           <div>
-            <p className="text-left font-bold text-orange-300 text-5xl"> PROJECTS </p>
+            <p className="text-left  text-orange-300 text-4xl"> PROJECTS </p>
           </div>
           
           { 
@@ -158,19 +163,19 @@ export default function Home()
           
           )}
 
-          <p className="text-center md:text-left font-bold text-orange-300 text-5xl">CONTACT & MEDIA</p>
+          <p className="text-center md:text-left  text-orange-300 text-4xl">CONTACT & MEDIA</p>
             
           <div className="flex flex-col justify-center gap-4">
             <div className="flex items-center flex-col md:flex-row gap-4">
               <img className="w-12 h-12" src="Icons/mail_icon.png" alt='icon'/>
-              <div className="cursorHover text-left font-bold text-2xl md:text-3xl">
+              <div className="cursorHover text-left  text-2xl md:text-3xl">
                 <a className="cursorHover" href="mailto:lukaszsurma73@gmail.com">Lukaszsurma73@gmail.com</a>
               </div>
             </div>
 
             <div className="flex items-center flex-col md:flex-row gap-4">
               <img className="w-12 h-12" src="Icons/github_icon.png" alt='icon'/>
-              <div className="cursorHover text-left font-bold text-3xl">
+              <div className="cursorHover text-left  text-3xl">
                 <a className="cursorHover" target="blank" href="https://github.com/S-Lukasz">GitHub</a>
               </div>
             </div>
@@ -181,7 +186,7 @@ export default function Home()
 
       </div>
 
-      <footer id="100" className="text-2xl bg-customColor1 text-center p-4 border-t-2 border-slate-600">
+      <footer id="100" className="text-xl bg-customColor1 text-center p-4 border-t-2 border-slate-600">
         (monke) Footer example text
       </footer>
 

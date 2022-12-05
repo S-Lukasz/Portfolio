@@ -2,21 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face 
+/* @font-face 
 {
-  font-family: 'Redensek';
+  font-family: 'fontierro';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../public/REDENSEK.TTF");
-}
+  src: url("../public/fontierro.ttf");
+} */
 
 body, html 
 {
   color: #ebede9;
   padding: 0;
   margin: 0;
-  font-family: 'Redensek';
+  font-family: 'Black Ops One', cursive;
   background-color: #151d28;
   cursor: url("../public/cursor.png"), auto;
 }
