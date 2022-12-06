@@ -7,7 +7,35 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Home()
 {
-  const GalleryImages = ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_4.png", "Screens/game_screen_2.png", "Screens/game_screen_1.png", "Screens/pacman_game_2.png", "Screens/pacman_game_3.png", "Screens/pizza_empire_1.png", "Screens/pizza_empire_4.png", "Screens/survival_3.png", "Screens/survival_4.png", "Screens/gallery_img_no_br_1.png", "Screens/gallery_img_no_br_2.png", "Screens/gallery_img_no_br_3.png", "Screens/gallery_img_no_br_4.png"];
+  const Skills = [
+    {
+      icon: "Icons/csharp_icon.png",
+      link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
+      height: "6rem"
+    },
+    {
+      icon: "Icons/unity_icon.png",
+      link: "https://unity.com/",
+      height: "6rem"
+    },
+    {
+      icon: "Icons/git_icon.png",
+      link: "https://git-scm.com/",
+      height: "8rem"
+    },
+    {
+      icon: "Icons/next_js_icon.png",
+      link: "https://nextjs.org/",
+      height: "5rem"
+    },
+    {
+      icon: "Icons/tailwind_icon.png",
+      link: "https://tailwindcss.com/",
+      height: "6rem"
+    }
+  ]
+
+  const GalleryImages = ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_4.png", "Screens/game_screen_2.png", "Screens/game_screen_1.png", "Screens/pacman_game_2.PNG", "Screens/pacman_game_3.PNG", "Screens/pizza_empire_1.png", "Screens/pizza_empire_4.png", "Screens/survival_3.png", "Screens/survival_4.png", "Screens/gallery_img_no_br_1.png", "Screens/gallery_img_no_br_2.png", "Screens/gallery_img_no_br_3.png", "Screens/gallery_img_no_br_4.png"];
 
   const Projects = [
     {
@@ -16,6 +44,13 @@ export default function Home()
       desc: "Tycoon game with mafia.",
       desc2: "Choose a place to open a pizzeria, hire employees, pay suppliers and create your first menu. Get to know your clients, learn to deal with the mafia and keep growing. Soon your small pizzeria will grow into a huge chain covering the whole city.",
       icon: "Icons/pizza_icon.png",
+      buttonDesc1: "Steam",
+      buttonDesc2: "",
+      buttonLink1: "https://store.steampowered.com/app/1532790/Pizza_Empire/",
+      buttonLink2: "",
+      specialText: "",
+      specialClassName: "",
+      linkName: "",
       images: ["Screens/pizza_empire_1.png", "Screens/pizza_empire_2.png", "Screens/pizza_empire_3.png", "Screens/pizza_empire_4.png", "Screens/pizza_empire_5.png", "Screens/pizza_empire_6.png"]
     },
     {
@@ -24,6 +59,13 @@ export default function Home()
       desc: "Winner OF 2ND place at HACKYEAH Game Development #3 Polish Medival Villages and Settlements contest.",
       desc2: "Area of the Carpathian mountains, you get land that you have to develop, mark farmland, harvest crops, graze sheep and sell materials to expand your village, take part in the race to achieve the best developed village.",
       icon: "Icons/AoC_icon.png",
+      buttonDesc1: "Download",
+      buttonDesc2: "",
+      buttonLink1: "https://challengerocket.com/hackyeah-2022/works/ageofcarpathian-2176a0",
+      buttonLink2: "",
+      specialText: "HACKYEAH",
+      specialClassName: " text-orange-400 cursorHover",
+      linkName: "https://hackyeah.pl/",
       images: ["Screens/age_of_carpathian_1.png", "Screens/age_of_carpathian_2.png", "Screens/age_of_carpathian_3.png", "Screens/age_of_carpathian_4.png", "Screens/age_of_carpathian_5.png"]
     },
     {
@@ -32,6 +74,13 @@ export default function Home()
       desc: "Top down survival game.",
       desc2: "Gather resources, craft new items, build your base, farm crops and explore world full of surprises.",
       icon: "Icons/survival_game_icon.png",
+      buttonDesc1: "",
+      buttonDesc2: "",
+      buttonLink1: "",
+      buttonLink2: "",
+      specialText: "",
+      specialClassName: "",
+      linkName: "",
       images: ["Screens/survival_1.png", "Screens/survival_2.png", "Screens/survival_3.png", "Screens/survival_4.png"]
     },
     {
@@ -40,31 +89,59 @@ export default function Home()
       desc: "United With Ukraine Game Jam - Created with two of my friends.",
       desc2: "Cooperative game where you have to face enemies together as a ship commanders, play up to 4 people, use your Keyboard or Joysticks. Upgrade your ship, defend your country and defeat the enemy fleet.",
       icon: "Icons/AoC_icon.png",
+      buttonDesc1: "Download",
+      buttonDesc2: "",
+      buttonLink1: "https://gamejolt.com/games/cossackgirls/732462",
+      buttonLink2: "",
+      specialText: "United With Ukraine Game Jam",
+      specialClassName: "text-orange-400 cursorHover",
+      linkName: "",
       images: ["Screens/cossack_screen_0.png", "Screens/cossack_screen_1.png", "Screens/cossack_screen_2.png"]
     },
     {
       title: "CYBERBUG",
       title_detail: "2021, Finished",
-      desc: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs ",
-      desc2: "Opis gry jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry jakiejs Opis",
+      desc: "Project made for a gamejam Game Off 2021.",
+      desc2: "It was created with one of my friends, game jam was organized on Itch.io, participants had to follow a one-word theme “Bug”. It is a first-person action shooter in Cyberpunk style, in which you had to fight with incoming waves of bugs, gameplay was inspired by Call of Duty BlackOps.",
       icon: "Icons/cyberbug_game_icon.png",
+      buttonDesc1: "Download",
+      buttonDesc2: "",
+      buttonLink1: "https://pixellookstudio.itch.io/cyberbug",
+      buttonLink2: "",
+      specialText: "Game Off 2021",
+      specialClassName: "text-orange-400 cursorHover",
+      linkName: "",
       images: ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_2.png", "Screens/bug_game_screen_3.png"]
     },
     {
       title: "CRAWLER SOULS",
       title_detail: "2020 - 2021, Paused",
-      desc: "Opis gry ddd jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpiss",
-      desc2: "Opis gry ddd jakiejs tam Opis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry ",
+      desc: "2D Top-down styled adventure RPG game.",
+      desc2: "Play the role of a brave archer. Fight bosses, solve puzzles, explore, complete missions, , collect equppement and improve the character to become real hero.",
       icon: "Icons/crawlersouls_game_icon.png",
+      buttonDesc1: "",
+      buttonDesc2: "",
+      buttonLink1: "",
+      buttonLink2: "",
+      specialText: "",
+      specialClassName: "",
+      linkName: "",
       images: ["Screens/game_screen_1.png", "Screens/game_screen_2.png", "Screens/game_screen_3.png"]
     },
     {
       title: "PACMAN 3D",
       title_detail: "2021, Finished",
-      desc: "Opis gry jakiejs tam Opis gry2 jakiejs tamOpis gry jakiejs tamOpis gry2 jakiejs tamOpis ",
-      desc2: "Opis gry jakiejs tam Opis gry2 jakiejs tamOpis gry jakiejs tamOpis gry2 jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tamOpis gry jakiejs tam Opis gry ",
+      desc: "Remake of the iconic Pacman arcade game in 3D style.",
+      desc2: "The game has several difficulty modes, each with a larger map and more different opponents, the levels are procedurally generated. Besides that, we can create our own levels using the map creator.",
       icon: "Icons/pacman3D_game_icon.png",
-      images: ["Screens/pacman_game_1.png", "Screens/pacman_game_2.png", "Screens/pacman_game_3.png", "Screens/pacman_game_4.png"]
+      buttonDesc1: "",
+      buttonDesc2: "",
+      buttonLink1: "",
+      buttonLink2: "",
+      specialText: "Pacman",
+      specialClassName: "text-orange-400 cursorHover",
+      linkName: "",
+      images: ["Screens/pacman_game_1.PNG", "Screens/pacman_game_2.PNG", "Screens/pacman_game_3.PNG", "Screens/pacman_game_4.PNG"]
     }
   ];
 
@@ -125,7 +202,7 @@ export default function Home()
         <div className="flex flex-col items-center gap-14 w-3/4 mx-auto text-4xl text-center my-6 pb-20">
 
           <div>
-            <p className="text-left text-orange-300 text-4xl mt-4"> ABOUT ME </p>
+            <p className="text-left text-orange-300 text-4xl pt-8"> ABOUT ME </p>
           </div>
 
           <div className="flex flex-col items-center gap-2">
@@ -144,14 +221,19 @@ export default function Home()
 
             <div className="flex flex-col items-center gap-10 h-52">
 
-              <p className="text-left text-orange-300 text-4xl mt-4"> SKILLS </p>
+              <p className="text-left text-orange-300 text-4xl pt-16"> SKILLS </p>
 
               <div className="flex flex-wrap justify-center items-center gap-6">
-                <a className="cursorHover" href="#"><img className="drop-shadow-custom w-22 h-22" src="Icons/csharp_icon.png" alt='icon'/></a>
-                <a className="cursorHover" href="#"><img className="drop-shadow-custom w-22 h-22" src="Icons/unity_icon.png" alt='icon'/></a>
-                <a className="cursorHover" href="#"><img className="drop-shadow-custom w-22 h-22" src="Icons/git_icon.png" alt='icon'/></a>
-                <a className="cursorHover" href="#"><img className="drop-shadow-custom w-22 h-22" src="Icons/js_icon.png" alt='icon'/></a>
-                <a className="cursorHover" href="#"><img className="drop-shadow-custom w-18 h-18" src="Icons/react_icon.png" alt='icon'/></a>
+                {Skills.map((skill, i) =>
+                  <a key={"skill_icon" + i} target="blank" className="cursorHover group" href={skill.link}>
+                    <img
+                      style={{height:skill.height}}
+                      className={`drop-shadow-custom mt-2 transform-gpu ease-out transition-all duration-500 group-hover:scale-[1.2] group-hover:-translate-y-2`} 
+                      src={skill.icon}
+                      alt='icon'
+                    />
+                  </a>
+                )}
               </div>
 
             </div>
@@ -159,14 +241,28 @@ export default function Home()
           </div>
 
           <div>
-            <p className="text-left text-orange-300 text-4xl"> PROJECTS </p>
+            <p className="text-left text-orange-300 text-4xl pt-24"> PROJECTS </p>
           </div>
           
           { 
             Projects.map((proj, i) => 
             <React.Fragment key={"project_component_"+i}>
               <div className="pb-10" id={i.toString()}></div>
-              <ProjectComponent index={i} title={proj.title} title_detail={proj.title_detail} description={proj.desc} description2={proj.desc2} images={proj.images}/> 
+              <ProjectComponent 
+                index={i} 
+                title={proj.title} 
+                title_detail={proj.title_detail} 
+                description={proj.desc} 
+                description2={proj.desc2} 
+                buttonDesc1={proj.buttonDesc1} 
+                buttonDesc2={proj.buttonDesc2} 
+                buttonLink1={proj.buttonLink1} 
+                buttonLink2={proj.buttonLink2} 
+                specialText={proj.specialText}
+                specialClassName={proj.specialClassName}
+                linkName={proj.linkName}
+                images={proj.images}
+              /> 
             </React.Fragment>
           
           )}

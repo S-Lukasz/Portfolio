@@ -8,6 +8,13 @@ export default function ProjectComponent(props: {
   title_detail : string; 
   description : string; 
   description2 : string; 
+  buttonDesc1 : string; 
+  buttonDesc2 : string; 
+  buttonLink1 : string; 
+  buttonLink2 : string;
+  specialText : string;
+  specialClassName : string;
+  linkName : string;
   images : string[];
 }) {
 
@@ -22,7 +29,6 @@ export default function ProjectComponent(props: {
   return (
     
     <div className="flex flex-col items-center md:items-baseline gap-4">
-
       <div className=" text-left text-orange-300 text-3xl"> 
         {props.title}
         <p className=" text-orange-200 text-xl">  
@@ -31,9 +37,7 @@ export default function ProjectComponent(props: {
       </div>
 
       <div className = {(props.index % 2 === 0 ? "flex-col md:flex-row" : "flex-col md:flex-row-reverse") + " flex gap-4"}>
-
         <div className="w-full h-min relative shadow-black/60 shadow-lg shadow-main overflow-hidden group">
-
           <img className ="object-contain w-full h-full" src={props.images[currImgIndex]} alt='proj'/>
 
           <button className="
@@ -49,25 +53,29 @@ export default function ProjectComponent(props: {
             transition-all duration-300 ease-out" onClick={ () => OnButtonClick(false) }>
             <img className="mx-auto w-4" src={"Icons/arrow_button_left.png"} alt='proj'/>
           </button>
-        
         </div>
         
         <div className={(props.index % 2 === 0 ? "md:pl-10" : "md:pr-10") + " flex flex-col text-xl gap-6 text-center md:text-left w-full"}> 
-
           <div className="flex grow gap-5 flex-col text-sm xl:text-sm 2xl:text-xl 3xl:text-2xl drop-shadow-sm shadow-black">
-            <Text text={props.description} specialText="HACKYEAH" specialClassName=" text-orange-200 cursorHover" linkName="https://hackyeah.pl/"/>
+            <Text text={props.description} specialText={props.specialText} specialClassName={props.specialClassName} linkName={props.linkName}/>
              <p>{props.description2}</p>
           </div>
           
-          <div className = {(props.index % 2 === 0 ? "justify-center md:justify-end" : "justify-center md:justify-start") + " flex gap-4"}>
-            <button className="shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 border border-slate-600 hover:border-orange-300 rounded-sm px-8 text-sm bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"><a className="cursorHover" href="#">CODE</a></button>
-            <button className="shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 border border-slate-600 hover:border-orange-300 rounded-sm px-8 text-sm bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"><a className="cursorHover" href="#">DOWNLOAD</a></button>
+          <div className = {(props.index % 2 === 0 ? "justify-center md:justify-end" : "justify-center md:justify-start") + " flex gap-6"}>
+            <button className={(props.buttonDesc1 === "" ? "hidden" : "" ) + " shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 border border-slate-600 hover:border-orange-300 rounded-sm px-10 text-md bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"}>
+              <a className="cursorHover" target="blank" href={props.buttonLink1}>
+                {props.buttonDesc1}
+              </a>
+            </button>
+
+            <button className={(props.buttonDesc2 === "" ? "hidden" : "" ) + " shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 border border-slate-600 hover:border-orange-300 rounded-sm px-10 text-md bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"}>
+              <a className="cursorHover" target="blank" href={props.buttonLink2}>
+                {props.buttonDesc2}
+              </a>
+            </button>
           </div>
-          
         </div>
-
       </div>
-
     </div>
   );
   
