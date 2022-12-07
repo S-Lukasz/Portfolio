@@ -11,27 +11,22 @@ export default function Home()
     {
       icon: "Icons/csharp_icon_new.png",
       link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
-      height: "5rem"
     },
     {
       icon: "Icons/unity_icon_new.png",
       link: "https://unity.com/",
-      height: "5rem"
     },
     {
       icon: "Icons/git_icon_new.png",
       link: "https://git-scm.com/",
-      height: "5rem"
     },
     {
       icon: "Icons/nextjs_icon_new.png",
       link: "https://nextjs.org/",
-      height: "5rem"
     },
     {
       icon: "Icons/tailwindcss_icon_new.png",
       link: "https://tailwindcss.com/",
-      height: "5rem"
     }
   ]
 
@@ -40,7 +35,7 @@ export default function Home()
   const Projects = [
     {
       title: "PIZZA EMPIRE",
-      title_detail: "2022, Paused",
+      title_detail: "2022",
       desc: "Pizzera managamanet tycoon game with mafia elements.",
       desc2: "Choose a place to open a pizzeria, hire employees, pay suppliers and create your first menu. Get to know your clients, learn to deal with the mafia and keep growing. Soon your small pizzeria will grow into a huge chain covering the whole city.",
       icon: "Icons/pizza_icon.png",
@@ -219,7 +214,7 @@ export default function Home()
               </p>
             </div>
 
-            <div className="flex flex-col items-center gap-10 h-52">
+            <div className="flex flex-col items-center gap-10">
 
               <p className="text-left text-orange-300 text-4xl pt-16 pb-2"> SKILLS </p>
 
@@ -227,8 +222,7 @@ export default function Home()
                 {Skills.map((skill, i) =>
                   <a key={"skill_icon" + i} target="blank" className="cursorHover group" href={skill.link}>
                     <img
-                      style={{height:skill.height}}
-                      className={`drop-shadow-custom mt-2 transform-gpu ease-out transition-all duration-500 group-hover:scale-[1.2] group-hover:-translate-y-2`} 
+                      className="h-14 md:h-20 drop-shadow-custom mt-2 transform-gpu ease-out transition-all duration-500 group-hover:scale-[1.2] group-hover:-translate-y-2" 
                       src={skill.icon}
                       alt='icon'
                     />

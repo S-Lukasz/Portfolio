@@ -4,13 +4,13 @@ import ProjectButton from '../components/ProjectButton';
 import { useScrollDirection } from "../hooks/useScrollDirection";
 
 export default function Project(props: { projects : Project[]; }) {
-  const { scrollDirection } = useScrollDirection();
+  const { scrollDirection, yOffset } = useScrollDirection();
 
   return (
     <div>
         <header className={`
           ${scrollDirection === "up" ? "top-0" : "-top-full"} 
-          transition-all duration-100 text-3xl bg-customColor1 border-b-2 border-slate-600 text-center pb-2 pt-4 flex justify-center sticky top-0`}
+          transition-all duration-100 text-3xl bg-customColor1 border-b-2 border-slate-600 text-center pb-100 pt-4 flex justify-center sticky top-0`}
         >
           <div className="grow"> 
             <span className=" text-center text-orange-300 text-3xl">ŁUKASZ SURMA - PORTFOLIO</span> 
@@ -20,10 +20,10 @@ export default function Project(props: { projects : Project[]; }) {
         </header>
 
         <div className={`
-          ${scrollDirection === "up" ? "-top-full" : "top-0"} 
+          ${yOffset < 100 ? "-top-full" : "top-0"} 
           flex transition-all duration-200 text-3xl bg-customColor1 text-center p-4 justify-center fixed border-b-2 border-orange-300 left-0 right-0 z-20`}
         >
-          <div className="cursorHover flex grow gap-6 justify-center"> 
+          <div className="cursorHover flex flex-wrap grow gap-6 justify-center"> 
               <ProjectButton key={"proj_button_"+99} index={99} icon={"Icons/arrow_button_up.png"}></ProjectButton>
 
               { props.projects.map((proj, i) => 
