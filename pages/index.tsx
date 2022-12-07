@@ -35,13 +35,13 @@ export default function Home()
     }
   ]
 
-  const GalleryImages = ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_4.png", "Screens/game_screen_2.png", "Screens/game_screen_1.png", "Screens/pacman_game_2.PNG", "Screens/pacman_game_3.PNG", "Screens/pizza_empire_1.png", "Screens/pizza_empire_4.png", "Screens/survival_3.png", "Screens/survival_4.png", "Screens/gallery_img_no_br_1.png", "Screens/gallery_img_no_br_2.png", "Screens/gallery_img_no_br_3.png", "Screens/gallery_img_no_br_4.png"];
+  const GalleryImages = ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_4.png", "Screens/game_screen_2.png", "Screens/game_screen_1.png", "Screens/pacman_game_2.PNG", "Screens/pacman_game_3.PNG", "Screens/pizza_empire_1.png", "Screens/pizza_empire_4.png", "Screens/survival_3.png", "Screens/survival_4.png", "Screens/gallery_img_no_br_1.png", "Screens/gallery_img_no_br_2.png", "Screens/gallery_img_no_br_3.png", "Screens/gallery_img_no_br_4.png", "Screens/cossack_screen_1.png", "Screens/cossack_screen_0.png"];
 
   const Projects = [
     {
       title: "PIZZA EMPIRE",
       title_detail: "2022, Paused",
-      desc: "Tycoon game with mafia.",
+      desc: "Pizzera managamanet tycoon game with mafia elements.",
       desc2: "Choose a place to open a pizzeria, hire employees, pay suppliers and create your first menu. Get to know your clients, learn to deal with the mafia and keep growing. Soon your small pizzeria will grow into a huge chain covering the whole city.",
       icon: "Icons/pizza_icon.png",
       buttonDesc1: "Steam",
@@ -66,7 +66,7 @@ export default function Home()
       specialText: "HACKYEAH",
       specialClassName: " text-orange-400 cursorHover",
       linkName: "https://hackyeah.pl/",
-      images: ["Screens/age_of_carpathian_1.png", "Screens/age_of_carpathian_2.png", "Screens/age_of_carpathian_3.png", "Screens/age_of_carpathian_4.png", "Screens/age_of_carpathian_5.png"]
+      images: ["Screens/age_of_carpathian_5.png", "Screens/age_of_carpathian_1.png", "Screens/age_of_carpathian_2.png", "Screens/age_of_carpathian_3.png", "Screens/age_of_carpathian_4.png"]
     },
     {
       title: "COSSACK GIRLS",
@@ -81,7 +81,7 @@ export default function Home()
       specialText: "United With Ukraine Game Jam",
       specialClassName: "text-orange-400 cursorHover",
       linkName: "",
-      images: ["Screens/cossack_screen_0.png", "Screens/cossack_screen_1.png", "Screens/cossack_screen_2.png"]
+      images: [ "Screens/cossack_screen_1.png", "Screens/cossack_screen_0.png", "Screens/cossack_screen_2.png"]
     },
     {
       title: "SURVIVAL ISLAND",
@@ -96,7 +96,7 @@ export default function Home()
       specialText: "",
       specialClassName: "",
       linkName: "",
-      images: ["Screens/survival_1.png", "Screens/survival_2.png", "Screens/survival_3.png", "Screens/survival_4.png"]
+      images: [ "Screens/survival_4.png", "Screens/survival_1.png", "Screens/survival_2.png", "Screens/survival_3.png",]
     },
     {
       title: "CYBERBUG",
@@ -141,7 +141,7 @@ export default function Home()
       specialText: "Pacman",
       specialClassName: "text-orange-400 cursorHover",
       linkName: "",
-      images: ["Screens/pacman_game_1.PNG", "Screens/pacman_game_2.PNG", "Screens/pacman_game_3.PNG", "Screens/pacman_game_4.PNG"]
+      images: ["Screens/pacman_game_2.PNG", "Screens/pacman_game_1.PNG", "Screens/pacman_game_3.PNG", "Screens/pacman_game_4.PNG"]
     }
   ];
 
