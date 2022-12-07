@@ -111,7 +111,7 @@ export default function Home()
       specialText: "Game Off 2021",
       specialClassName: "text-orange-400 cursorHover",
       linkName: "",
-      images: ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_2.png", "Screens/bug_game_screen_3.png"]
+      images: ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_2.png", "Screens/bug_game_screen_3.png", "Screens/bug_game_screen_4.png"]
     },
     {
       title: "CRAWLER SOULS",
