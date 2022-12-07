@@ -9,29 +9,29 @@ export default function Home()
 {
   const Skills = [
     {
-      icon: "Icons/csharp_icon.png",
+      icon: "Icons/csharp_icon_new.png",
       link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
-      height: "6rem"
+      height: "5rem"
     },
     {
-      icon: "Icons/unity_icon.png",
+      icon: "Icons/unity_icon_new.png",
       link: "https://unity.com/",
-      height: "6rem"
+      height: "5rem"
     },
     {
-      icon: "Icons/git_icon.png",
+      icon: "Icons/git_icon_new.png",
       link: "https://git-scm.com/",
-      height: "8rem"
+      height: "5rem"
     },
     {
-      icon: "Icons/next_js_icon.png",
+      icon: "Icons/nextjs_icon_new.png",
       link: "https://nextjs.org/",
       height: "5rem"
     },
     {
-      icon: "Icons/tailwind_icon.png",
+      icon: "Icons/tailwindcss_icon_new.png",
       link: "https://tailwindcss.com/",
-      height: "6rem"
+      height: "5rem"
     }
   ]
 
@@ -69,6 +69,21 @@ export default function Home()
       images: ["Screens/age_of_carpathian_1.png", "Screens/age_of_carpathian_2.png", "Screens/age_of_carpathian_3.png", "Screens/age_of_carpathian_4.png", "Screens/age_of_carpathian_5.png"]
     },
     {
+      title: "COSSACK GIRLS",
+      title_detail: "2022, Finished in 48h",
+      desc: "United With Ukraine Game Jam - Created with two of my friends.",
+      desc2: "Cooperative game where you have to face enemies together as a ship commanders, play up to 4 people, use your Keyboard or Joysticks. Upgrade your ship, defend your country and defeat the enemy fleet.",
+      icon: "Icons/cossacs_game_icon.png",
+      buttonDesc1: "Download",
+      buttonDesc2: "",
+      buttonLink1: "https://gamejolt.com/games/cossackgirls/732462",
+      buttonLink2: "",
+      specialText: "United With Ukraine Game Jam",
+      specialClassName: "text-orange-400 cursorHover",
+      linkName: "",
+      images: ["Screens/cossack_screen_0.png", "Screens/cossack_screen_1.png", "Screens/cossack_screen_2.png"]
+    },
+    {
       title: "SURVIVAL ISLAND",
       title_detail: "2022, Work in progress",
       desc: "Top down survival game.",
@@ -82,21 +97,6 @@ export default function Home()
       specialClassName: "",
       linkName: "",
       images: ["Screens/survival_1.png", "Screens/survival_2.png", "Screens/survival_3.png", "Screens/survival_4.png"]
-    },
-    {
-      title: "COSSACK GIRLS",
-      title_detail: "2022, Finished in 48h",
-      desc: "United With Ukraine Game Jam - Created with two of my friends.",
-      desc2: "Cooperative game where you have to face enemies together as a ship commanders, play up to 4 people, use your Keyboard or Joysticks. Upgrade your ship, defend your country and defeat the enemy fleet.",
-      icon: "Icons/AoC_icon.png",
-      buttonDesc1: "Download",
-      buttonDesc2: "",
-      buttonLink1: "https://gamejolt.com/games/cossackgirls/732462",
-      buttonLink2: "",
-      specialText: "United With Ukraine Game Jam",
-      specialClassName: "text-orange-400 cursorHover",
-      linkName: "",
-      images: ["Screens/cossack_screen_0.png", "Screens/cossack_screen_1.png", "Screens/cossack_screen_2.png"]
     },
     {
       title: "CYBERBUG",
@@ -199,10 +199,10 @@ export default function Home()
        </div>
         
         
-        <div className="flex flex-col items-center gap-14 w-3/4 mx-auto text-4xl text-center my-6 pb-20">
+        <div className="flex flex-col items-center gap-2 w-3/4 mx-auto text-4xl text-center my-6 pb-16">
 
           <div>
-            <p className="text-left text-orange-300 text-4xl pt-8"> ABOUT ME </p>
+            <p className="text-left text-orange-300 text-4xl pt-8 pb-4"> ABOUT ME </p>
           </div>
 
           <div className="flex flex-col items-center gap-2">
@@ -221,9 +221,9 @@ export default function Home()
 
             <div className="flex flex-col items-center gap-10 h-52">
 
-              <p className="text-left text-orange-300 text-4xl pt-16"> SKILLS </p>
+              <p className="text-left text-orange-300 text-4xl pt-16 pb-2"> SKILLS </p>
 
-              <div className="flex flex-wrap justify-center items-center gap-6">
+              <div className="flex flex-wrap justify-center items-center gap-10">
                 {Skills.map((skill, i) =>
                   <a key={"skill_icon" + i} target="blank" className="cursorHover group" href={skill.link}>
                     <img
@@ -241,13 +241,13 @@ export default function Home()
           </div>
 
           <div>
-            <p className="text-left text-orange-300 text-4xl pt-24"> PROJECTS </p>
+            <p className="text-left text-orange-300 text-4xl pt-32"> PROJECTS </p>
           </div>
           
           { 
             Projects.map((proj, i) => 
             <React.Fragment key={"project_component_"+i}>
-              <div className="pb-10" id={i.toString()}></div>
+              <div className={ i === 0 ? "pb-22" : "pb-24"} id={i.toString()}></div>
               <ProjectComponent 
                 index={i} 
                 title={proj.title} 
@@ -267,31 +267,30 @@ export default function Home()
           
           )}
 
-          <p className="text-center md:text-left  text-orange-300 text-4xl">CONTACT & MEDIA</p>
+          <p className="text-center md:text-left  text-orange-300 text-3xl pt-24">CONTACT & MEDIA</p>
             
-          <div className="flex flex-col justify-center gap-4">
-            <div className="flex items-center flex-col md:flex-row gap-4">
-              <img className="w-12 h-12" src="Icons/mail_icon.png" alt='icon'/>
-              <div className="cursorHover text-left  text-2xl md:text-3xl">
+          <div className="flex flex-col justify-center gap-4 ">
+            <div className="flex items-center flex-col md:flex-row gap-4 group">
+              <img className="cursorHover h-12 w-12 cursor hover drop-shadow-custom transform-gpu text-left text-2xl ease-out transition-all duration-500 group-hover:scale-[1.2] group-hover:-translate-y-2" src="Icons/mail_icon_new.png" alt='icon'/>
+              
+              <div className="cursorHover text-left text-xl md:text-2xl">
                 <a className="cursorHover" href="mailto:lukaszsurma73@gmail.com">Lukaszsurma73@gmail.com</a>
               </div>
             </div>
 
-            <div className="flex items-center flex-col md:flex-row gap-4">
-              <img className="w-12 h-12" src="Icons/github_icon.png" alt='icon'/>
-              <div className="cursorHover text-left  text-3xl">
-                <a className="cursorHover" target="blank" href="https://github.com/S-Lukasz">GitHub</a>
+            <div className="flex items-center flex-col md:flex-row gap-4 group">
+              <img className="cursorHover h-10 w-10 cursor hover drop-shadow-custom transform-gpu text-left text-2xl ease-out transition-all duration-500 group-hover:scale-[1.2] group-hover:-translate-y-2" src="Icons/github_icon_new.png" alt='icon'/>
+              
+              <div className="cursorHover text-left text-xl md:text-2xl">
+                <a className="cursorHover pl-1" target="blank" href="https://github.com/S-Lukasz">GitHub</a>
               </div>
             </div>
-
           </div>
-
         </div>
-
       </div>
 
-      <footer id="100" className="text-xl bg-customColor1 text-center p-4 border-t-2 border-slate-600">
-        (monke) Footer example text
+      <footer id="100" className="text-sm bg-customColor1 text-center text-slate-200 p-4 border-t-2 border-slate-600">
+        (@) Created by Łukasz Surma in Next.js
       </footer>
 
     </div>
