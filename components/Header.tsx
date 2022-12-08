@@ -10,16 +10,16 @@ export default function Project(props: { projects : Project[]; }) {
     <div>
         <header className={`
           ${scrollDirection === "up" ? "top-0" : "-top-full"} 
-          transition-all duration-100 text-3xl bg-customColor1 border-b-2 border-slate-600 text-center pb-100 pt-4 flex justify-center sticky top-0`}
+          transition-all duration-100 text-3xl bg-customColor1 border-b-2 border-slate-600 text-center pb-100 pt-4 pb-2 flex justify-center sticky top-0`}
         >
           <div className="grow"> 
-            <span className=" text-center text-orange-300 text-3xl">ŁUKASZ SURMA - PORTFOLIO</span> 
+            <span className=" text-center text-orange-300 text-3xl header">ŁUKASZ SURMA - PORTFOLIO</span> 
           </div>
 
           <div className="w-10 h-10"> </div>
         </header>
 
-        <div className={`
+        {/* <div className={`
           ${yOffset < 100 ? "-top-full" : "top-0"} 
           flex transition-all duration-200 text-3xl bg-customColor1 text-center p-4 justify-center fixed border-b-2 border-orange-300 left-0 right-0 z-20`}
         >
@@ -34,7 +34,7 @@ export default function Project(props: { projects : Project[]; }) {
           </div>
 
           <div className="md:w-10 md:h-10"> </div>
-        </div>
+        </div> */}
   </div>
   );
 }

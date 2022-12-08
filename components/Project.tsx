@@ -29,7 +29,7 @@ export default function ProjectComponent(props: {
   return (
     
     <div className="flex flex-col items-center md:items-baseline gap-4">
-      <div className=" text-left text-orange-300 text-3xl"> 
+      <div className=" text-left text-orange-300 text-3xl header"> 
         {props.title}
         <p className=" text-orange-200 text-xl">  
           {props.title_detail} 
@@ -62,13 +62,13 @@ export default function ProjectComponent(props: {
           </div>
           
           <div className = {(props.index % 2 === 0 ? "justify-center md:justify-end" : "justify-center md:justify-start") + " flex gap-6"}>
-            <button className={(props.buttonDesc1 === "" ? "hidden" : "" ) + " shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 border border-slate-600 hover:border-orange-300 rounded-sm px-10 text-md bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"}>
+            <button className={(props.buttonDesc1 === "" ? "hidden" : "" ) + " shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 pb-1 border border-slate-600 hover:border-orange-300 rounded-sm px-10 text-md bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"}>
               <a className="cursorHover" target="blank" href={props.buttonLink1}>
                 {props.buttonDesc1}
               </a>
             </button>
 
-            <button className={(props.buttonDesc2 === "" ? "hidden" : "" ) + " shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 border border-slate-600 hover:border-orange-300 rounded-sm px-10 text-md bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"}>
+            <button className={(props.buttonDesc2 === "" ? "hidden" : "" ) + " shadow-slate-900 cursorHover shadow-lg shadow-main pt-1 pb-1 border border-slate-600 hover:border-orange-300 rounded-sm px-10 text-md bg-slate-800 text-orange-500 hover:bg-slate-900 hover:text-orange-300"}>
               <a className="cursorHover" target="blank" href={props.buttonLink2}>
                 {props.buttonDesc2}
               </a>

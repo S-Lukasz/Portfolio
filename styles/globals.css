@@ -16,9 +16,16 @@ body, html
   color: #ebede9;
   padding: 0;
   margin: 0;
-  font-family: 'Black Ops One', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   background-color: #151d28;
   cursor: url("../public/cursor.png"), auto;
+}
+
+.header
+{
+  font-family: 'Black Ops One', cursive;
+  font-weight: normal;
 }
 
 .cursorHover

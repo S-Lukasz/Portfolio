@@ -34,21 +34,6 @@ export default function Home()
 
   const Projects = [
     {
-      title: "PIZZA EMPIRE",
-      title_detail: "2022",
-      desc: "Pizzera managamanet tycoon game with mafia elements.",
-      desc2: "Choose a place to open a pizzeria, hire employees, pay suppliers and create your first menu. Get to know your clients, learn to deal with the mafia and keep growing. Soon your small pizzeria will grow into a huge chain covering the whole city.",
-      icon: "Icons/pizza_icon.png",
-      buttonDesc1: "Steam",
-      buttonDesc2: "",
-      buttonLink1: "https://store.steampowered.com/app/1532790/Pizza_Empire/",
-      buttonLink2: "",
-      specialText: "",
-      specialClassName: "",
-      linkName: "",
-      images: ["Screens/pizza_empire_1.png", "Screens/pizza_empire_2.png", "Screens/pizza_empire_3.png", "Screens/pizza_empire_4.png", "Screens/pizza_empire_5.png", "Screens/pizza_empire_6.png"]
-    },
-    {
       title: "AGE OF CARPATHIAN",
       title_detail: "2022, Finished in 24h",
       desc: "Winner OF 2ND place at HACKYEAH Game Development #3 Polish Medival Villages and Settlements contest.",
@@ -62,6 +47,21 @@ export default function Home()
       specialClassName: " text-orange-400 cursorHover",
       linkName: "https://hackyeah.pl/",
       images: ["Screens/age_of_carpathian_5.png", "Screens/age_of_carpathian_1.png", "Screens/age_of_carpathian_2.png", "Screens/age_of_carpathian_3.png", "Screens/age_of_carpathian_4.png"]
+    },
+    {
+      title: "PIZZA EMPIRE",
+      title_detail: "2022",
+      desc: "Pizzera managamanet tycoon game with mafia elements.",
+      desc2: "Choose a place to open a pizzeria, hire employees, pay suppliers and create your first menu. Get to know your clients, learn to deal with the mafia and keep growing. Soon your small pizzeria will grow into a huge chain covering the whole city.",
+      icon: "Icons/pizza_icon.png",
+      buttonDesc1: "Steam",
+      buttonDesc2: "",
+      buttonLink1: "https://store.steampowered.com/app/1532790/Pizza_Empire/",
+      buttonLink2: "",
+      specialText: "",
+      specialClassName: "",
+      linkName: "",
+      images: ["Screens/pizza_empire_1.png", "Screens/pizza_empire_2.png", "Screens/pizza_empire_3.png", "Screens/pizza_empire_4.png", "Screens/pizza_empire_5.png", "Screens/pizza_empire_6.png"]
     },
     {
       title: "COSSACK GIRLS",
@@ -152,8 +152,8 @@ export default function Home()
         <title>Portfolio</title>
         <link rel="icon" href="/fav_icon_gamepad.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
       </Head>
 
       <Header projects={Projects}></Header>
@@ -197,7 +197,7 @@ export default function Home()
         <div className="flex flex-col items-center gap-2 w-3/4 mx-auto text-4xl text-center my-6 pb-16">
 
           <div>
-            <p className="text-left text-orange-300 text-4xl pt-8 pb-4"> ABOUT ME </p>
+            <p className="text-left text-orange-300 text-4xl pt-8 pb-4 header"> ABOUT ME </p>
           </div>
 
           <div className="flex flex-col items-center gap-2">
@@ -216,7 +216,7 @@ export default function Home()
 
             <div className="flex flex-col items-center gap-10">
 
-              <p className="text-left text-orange-300 text-4xl pt-16 pb-2"> SKILLS </p>
+              <p className="text-left text-orange-300 text-4xl pt-16 pb-2 header"> SKILLS </p>
 
               <div className="flex flex-wrap justify-center items-center gap-10">
                 {Skills.map((skill, i) =>
@@ -235,7 +235,7 @@ export default function Home()
           </div>
 
           <div>
-            <p className="text-left text-orange-300 text-4xl pt-32"> PROJECTS </p>
+            <p className="text-left text-orange-300 text-4xl pt-32 header"> PROJECTS </p>
           </div>
           
           { 
@@ -261,7 +261,7 @@ export default function Home()
           
           )}
 
-          <p className="text-center md:text-left  text-orange-300 text-3xl pt-24">CONTACT & MEDIA</p>
+          <p className="text-center md:text-left  text-orange-300 text-3xl pt-24 header">CONTACT & MEDIA</p>
             
           <div className="flex flex-col justify-center gap-4 ">
             <div className="flex items-center flex-col md:flex-row gap-4 group">
