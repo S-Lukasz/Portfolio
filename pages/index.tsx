@@ -56,7 +56,7 @@ export default function Home()
       icon: "Icons/AoC_icon.png",
       buttonDesc1: "Download",
       buttonDesc2: "",
-      buttonLink1: "https://challengerocket.com/hackyeah-2022/works/ageofcarpathian-2176a0",
+      buttonLink1: "https://drive.google.com/file/d/1Hd-6lbbPJyYx4f_PaMm6vGitefPj8rV3/view?usp=sharing",
       buttonLink2: "",
       specialText: "HACKYEAH",
       specialClassName: " text-orange-400 cursorHover",
@@ -75,7 +75,7 @@ export default function Home()
       buttonLink2: "",
       specialText: "United With Ukraine Game Jam",
       specialClassName: "text-orange-400 cursorHover",
-      linkName: "",
+      linkName: "https://www.facebook.com/events/mi%C5%84ska-65/united-with-ukraine-game-jam/1053338978647812/",
       images: [ "Screens/cossack_screen_1.png", "Screens/cossack_screen_0.png", "Screens/cossack_screen_2.png"]
     },
     {
@@ -105,7 +105,7 @@ export default function Home()
       buttonLink2: "",
       specialText: "Game Off 2021",
       specialClassName: "text-orange-400 cursorHover",
-      linkName: "",
+      linkName: "https://itch.io/jam/game-off-2021",
       images: ["Screens/bug_game_screen_1.png", "Screens/bug_game_screen_2.png", "Screens/bug_game_screen_3.png", "Screens/bug_game_screen_4.png"]
     },
     {
