@@ -265,7 +265,9 @@ export default function Home()
             
           <div className="flex flex-col justify-center gap-4 ">
             <div className="flex items-center flex-col md:flex-row gap-4 group">
-              <img className="cursorHover h-12 w-12 cursor hover drop-shadow-custom transform-gpu text-left text-2xl ease-out transition-all duration-500 group-hover:scale-[1.2] group-hover:-translate-y-2" src="Icons/mail_icon_new.png" alt='icon'/>
+              <a className="cursorHover pl-1" target="blank" href="mailto:lukaszsurma73@gmail.com">
+                <img className="cursorHover h-12 w-12 cursor hover drop-shadow-custom transform-gpu text-left text-2xl ease-out transition-all duration-500 group-hover:scale-[1.2] group-hover:-translate-y-2" src="Icons/mail_icon_new.png" alt='icon'/>
+              </a>
               
               <div className="cursorHover text-left text-xl md:text-2xl">
                 <a className="cursorHover" href="mailto:lukaszsurma73@gmail.com">Lukaszsurma73@gmail.com</a>
@@ -273,10 +275,22 @@ export default function Home()
             </div>
 
             <div className="flex items-center flex-col md:flex-row gap-4 group">
-              <img className="cursorHover h-10 w-10 cursor hover drop-shadow-custom transform-gpu text-left text-2xl ease-out transition-all duration-500 group-hover:scale-[1.2] group-hover:-translate-y-2" src="Icons/github_icon_new.png" alt='icon'/>
+              <a className="cursorHover pl-1" target="blank" href="https://github.com/S-Lukasz">
+                <img className="cursorHover h-10 w-10 cursor hover drop-shadow-custom transform-gpu text-left text-2xl ease-out transition-all duration-500 group-hover:scale-[1.2] group-hover:-translate-y-2" src="Icons/github_icon_new.png" alt='icon'/>
+              </a>
               
               <div className="cursorHover text-left text-xl md:text-2xl">
                 <a className="cursorHover pl-1" target="blank" href="https://github.com/S-Lukasz">GitHub</a>
+              </div>
+            </div>
+
+            <div className="flex items-center flex-col md:flex-row gap-4 group">
+              <a className="cursorHover pl-1" target="blank" href="https://linkedin.com/in/łukasz-surma-71b0a7219">
+                <img className="cursorHover h-10 w-10 cursor hover drop-shadow-custom transform-gpu text-left text-2xl ease-out transition-all duration-500 group-hover:scale-[1.2] group-hover:-translate-y-2" src="Icons/linkedin_icon.png" alt='icon'/>
+              </a>
+              
+              <div className="cursorHover text-left text-xl md:text-2xl">
+                <a className="cursorHover pl-1" target="blank" href="https://linkedin.com/in/łukasz-surma-71b0a7219">LinkedIn</a>
               </div>
             </div>
           </div>
